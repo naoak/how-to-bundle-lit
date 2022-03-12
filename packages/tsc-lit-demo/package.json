@@ -1,5 +1,5 @@
 {
-  "name": "tsc-demo",
+  "name": "tsc-lit-demo",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -7,9 +7,9 @@
   "author": "Naoaki Yamada",
   "scripts": {
     "build": "npm run build:tsc && npm run build:rollup",
-    "build:rollup": "rollup -p node-resolve --context window tsc-demo.js --file bundle.js",
+    "build:rollup": "rollup -p node-resolve --context window tsc-lit-demo.js --file bundle.js",
     "build:tsc": "tsc",
-    "clean": "rm -f *-demo.js bundle.js",
+    "clean": "rm -f *-demo.js* bundle.js",
     "serve": "python3 -m http.server 8003"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "swc-demo",
+  "name": "swc-lit-demo",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -7,8 +7,8 @@
   "author": "Naoaki Yamada",
   "scripts": {
     "build": "npm run build:swc && npm run build:rollup",
-    "build:rollup": "rollup -p node-resolve swc-demo.js --file bundle.js",
-    "build:swc": "swc swc-demo.ts -o swc-demo.js",
+    "build:rollup": "rollup -p node-resolve swc-lit-demo.js --file bundle.js",
+    "build:swc": "swc swc-lit-demo.ts -o swc-lit-demo.js",
     "clean": "rm -f *-demo.js* bundle.js",
     "serve": "python3 -m http.server 8002"
   },

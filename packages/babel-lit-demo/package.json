@@ -1,5 +1,5 @@
 {
-  "name": "babel-demo",
+  "name": "babel-lit-demo",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -7,9 +7,9 @@
   "author": "Naoaki Yamada",
   "scripts": {
     "build": "npm run build:babel && npm run build:rollup",
-    "build:babel": "babel babel-demo.ts -o babel-demo.js",
-    "build:rollup": "rollup -p node-resolve babel-demo.js --file bundle.js",
-    "clean": "rm -f *-demo.js bundle.js",
+    "build:babel": "babel babel-lit-demo.ts -o babel-lit-demo.js",
+    "build:rollup": "rollup -p node-resolve babel-lit-demo.js --file bundle.js",
+    "clean": "rm -f *-demo.js* bundle.js",
     "serve": "python3 -m http.server 8000"
   },
   "devDependencies": {

@@ -2,8 +2,8 @@ import { html, LitElement, TemplateResult } from "lit";
 import { customElement } from "lit/decorators/custom-element.js";
 import { state } from "lit/decorators/state.js";
 
-@customElement("tsc-demo")
-export class TSCDemoElement extends LitElement {
+@customElement("tsc-lit-demo")
+export class TSCLitDemo extends LitElement {
   @state()
   private count: number = 0;
 

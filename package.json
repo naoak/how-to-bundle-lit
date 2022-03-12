@@ -6,14 +6,14 @@
   "license": "ISC",
   "author": "Naoaki Yamada",
   "workspaces": [
-    "packages/babel-demo",
-    "packages/esbuild-demo",
-    "packages/swc-demo",
-    "packages/tsc-demo"
+    "packages/babel-lit-demo",
+    "packages/esbuild-lit-demo",
+    "packages/swc-lit-demo",
+    "packages/tsc-lit-demo"
   ],
   "scripts": {
-    "build": "npm run build --workspace=babel-demo --workspace=esbuild-demo --workspace=swc-demo --workspace=tsc-demo",
-    "clean": "npm run clean --workspace=babel-demo --workspace=esbuild-demo --workspace=swc-demo --workspace=tsc-demo"
+    "build": "npm run build --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo",
+    "clean": "npm run clean --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo"
   },
   "engines": {
     "node": ">=16",

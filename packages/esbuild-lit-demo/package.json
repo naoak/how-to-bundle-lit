@@ -1,12 +1,12 @@
 {
-  "name": "esbuild-demo",
+  "name": "esbuild-lit-demo",
   "version": "1.0.0",
   "private": true,
   "description": "",
   "license": "ISC",
   "author": "Naoaki Yamada",
   "scripts": {
-    "build": "esbuild esbuild-demo.ts --bundle --outfile=bundle.js",
+    "build": "esbuild esbuild-lit-demo.ts --bundle --outfile=bundle.js",
     "clean": "rm -f bundle.js",
     "serve": "python3 -m http.server 8001"
   },

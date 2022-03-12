@@ -2,8 +2,8 @@ import { html, LitElement, TemplateResult } from "lit";
 import { customElement } from "lit/decorators/custom-element.js";
 import { state } from "lit/decorators/state.js";
 
-@customElement("babel-demo")
-export class BabelDemo extends LitElement {
+@customElement("babel-lit-demo")
+export class BabelLitDemo extends LitElement {
   @state()
   private count: number = 0;
 

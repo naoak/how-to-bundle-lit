@@ -1,10 +1,14 @@
 import { html, LitElement, TemplateResult } from "lit";
 import { customElement } from "lit/decorators/custom-element.js";
-import { state } from "lit/decorators/state.js";
 
-@customElement("esbuild-demo")
-export class ESBuildDemo extends LitElement {
-  @state()
+@customElement("swc-lit-demo")
+export class SWCLitDemo extends LitElement {
+  static properties = {
+    count: {
+      type: Number,
+    },
+  };
+
   private count: number = 0;
 
   protected render(): TemplateResult {
