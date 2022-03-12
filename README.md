@@ -23,3 +23,11 @@ To serve a demo,
 ```
 npm run serve -w <demo-name>
 ```
+
+## Demo List
+
+- babel-lit-demo
+- esbuild-lit-demo
+- swc-lit-demo
+- tsc-lit-demo
+- tsc-polymer-demo

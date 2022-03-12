@@ -9,11 +9,12 @@
     "packages/babel-lit-demo",
     "packages/esbuild-lit-demo",
     "packages/swc-lit-demo",
-    "packages/tsc-lit-demo"
+    "packages/tsc-lit-demo",
+    "packages/tsc-polymer-demo"
   ],
   "scripts": {
-    "build": "npm run build --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo",
-    "clean": "npm run clean --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo"
+    "build": "npm run build --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo --workspace=tsc-polymer-demo",
+    "clean": "npm run clean --workspace=babel-lit-demo --workspace=esbuild-lit-demo --workspace=swc-lit-demo --workspace=tsc-lit-demo --workspace=tsc-polymer-demo"
   },
   "engines": {
     "node": ">=16",
