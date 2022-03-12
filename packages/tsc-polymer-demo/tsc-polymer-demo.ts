@@ -1,5 +1,5 @@
 import { html, PolymerElement } from "@polymer/polymer";
-import { customElement, property } from "@polymer/decorators";
+import { customElement, observe, property } from "@polymer/decorators";
 
 @customElement("tsc-polymer-demo")
 export class TSCPolymerDemo extends PolymerElement {
@@ -15,5 +15,10 @@ export class TSCPolymerDemo extends PolymerElement {
 
   increment() {
     this.count++;
+  }
+
+  @observe("count")
+  log(count: number) {
+    console.log(`count changed to ${count}`);
   }
 }
