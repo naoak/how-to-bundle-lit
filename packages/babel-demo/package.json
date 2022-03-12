@@ -1,0 +1,24 @@
+{
+  "name": "babel-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "Naoaki Yamada",
+  "scripts": {
+    "build": "npm run build:babel && npm run build:rollup",
+    "build:babel": "babel babel-demo.ts -o babel-demo.js",
+    "build:rollup": "rollup -p node-resolve babel-demo.js --file bundle.js",
+    "clean": "rm -f *-demo.js bundle.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-proposal-decorators": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.70.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tsc-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "Naoaki Yamada",
+  "scripts": {
+    "build": "npm run build:tsc && npm run build:rollup",
+    "build:rollup": "rollup -p node-resolve --context window tsc-demo.js --file bundle.js",
+    "build:tsc": "tsc",
+    "clean": "rm -f *-demo.js bundle.js",
+    "serve": "python3 -m http.server 8003"
+  },
+  "dependencies": {
+    "lit": "^2.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.70.0",
+    "typescript": "^4.6.2"
+  }
+}

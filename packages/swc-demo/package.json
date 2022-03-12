@@ -1,0 +1,24 @@
+{
+  "name": "swc-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "Naoaki Yamada",
+  "scripts": {
+    "build": "npm run build:swc && npm run build:rollup",
+    "build:rollup": "rollup -p node-resolve swc-demo.js --file bundle.js",
+    "build:swc": "swc swc-demo.ts -o swc-demo.js",
+    "clean": "rm -f *-demo.js* bundle.js",
+    "serve": "python3 -m http.server 8002"
+  },
+  "dependencies": {
+    "lit": "^2.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.154",
+    "rollup": "^2.70.0"
+  }
+}

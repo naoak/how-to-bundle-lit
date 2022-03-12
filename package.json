@@ -1,0 +1,22 @@
+{
+  "name": "how-to-bundle-lit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "license": "ISC",
+  "author": "Naoaki Yamada",
+  "workspaces": [
+    "packages/babel-demo",
+    "packages/esbuild-demo",
+    "packages/swc-demo",
+    "packages/tsc-demo"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=babel-demo --workspace=esbuild-demo --workspace=swc-demo --workspace=tsc-demo",
+    "clean": "npm run clean --workspace=babel-demo --workspace=esbuild-demo --workspace=swc-demo --workspace=tsc-demo"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  }
+}
