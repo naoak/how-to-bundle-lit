@@ -28,6 +28,6 @@ npm run serve -w <demo-name>
 
 - babel-lit-demo
 - esbuild-lit-demo
-- swc-lit-demo
+- swc-lit-demo (@state is not work)
 - tsc-lit-demo
 - tsc-polymer-demo

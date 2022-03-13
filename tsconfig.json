@@ -1,6 +1,9 @@
 // tsconfig.json is not necessary for building but avoids some errors in vscode
 {
   "compilerOptions": {
+    "target": "es2021",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
     "experimentalDecorators": true
   }
 }

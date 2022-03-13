@@ -1,8 +1,8 @@
 import { html, PolymerElement } from "@polymer/polymer";
 import { customElement, observe, property } from "@polymer/decorators";
 
-@customElement("tsc-polymer-demo")
-export class TSCPolymerDemo extends PolymerElement {
+@customElement("polymer-demo")
+export class PolymerDemo extends PolymerElement {
   @property({ type: Number })
   count: number = 0;
 

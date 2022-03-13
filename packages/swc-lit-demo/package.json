@@ -6,10 +6,11 @@
   "license": "ISC",
   "author": "Naoaki Yamada",
   "scripts": {
-    "build": "npm run build:swc && npm run build:rollup",
-    "build:rollup": "rollup -p node-resolve swc-lit-demo.js --file bundle.js",
-    "build:swc": "swc swc-lit-demo.ts -o swc-lit-demo.js",
-    "clean": "rm -f *-demo.js* bundle.js",
+    "build": "npm run cp && npm run build:swc && npm run build:rollup",
+    "build:rollup": "rollup -p node-resolve lib/lit-demo.js --file lib/bundle.js",
+    "build:swc": "swc src -d lib",
+    "clean": "rm -rf src lib",
+    "cp": "rm -rf src && cp -rf ../../src/lit-demo src",
     "serve": "python3 -m http.server 8002"
   },
   "dependencies": {

@@ -1,11 +1,12 @@
 import { html, LitElement, TemplateResult } from "lit";
 import { customElement } from "lit/decorators/custom-element.js";
 import { state } from "lit/decorators/state.js";
+import { Num, initialCount } from "./constants";
 
-@customElement("esbuild-lit-demo")
-export class ESBuildLitDemo extends LitElement {
+@customElement("lit-demo")
+export class LitDemo extends LitElement {
   @state()
-  private count: number = 0;
+  private count: Num = initialCount;
 
   protected render(): TemplateResult {
     return html`

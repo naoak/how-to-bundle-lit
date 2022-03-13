@@ -1,6 +1,0 @@
-// tsconfig.json is not necessary for building but avoids some errors in vscode
-{
-  "compilerOptions": {
-    "experimentalDecorators": true
-  }
-}

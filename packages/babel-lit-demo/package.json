@@ -6,10 +6,11 @@
   "license": "ISC",
   "author": "Naoaki Yamada",
   "scripts": {
-    "build": "npm run build:babel && npm run build:rollup",
-    "build:babel": "babel babel-lit-demo.ts -o babel-lit-demo.js",
-    "build:rollup": "rollup -p node-resolve babel-lit-demo.js --file bundle.js",
-    "clean": "rm -f *-demo.js* bundle.js",
+    "build": "npm run cp && npm run build:babel && npm run build:rollup",
+    "build:babel": "babel src --extensions '.ts' --out-dir lib",
+    "build:rollup": "rollup -p node-resolve lib/lit-demo.js --file lib/bundle.js",
+    "clean": "rm -rf src lib",
+    "cp": "rm -rf src && cp -rf ../../src/lit-demo src",
     "serve": "python3 -m http.server 8000"
   },
   "devDependencies": {
