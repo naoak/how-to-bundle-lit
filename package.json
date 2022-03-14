@@ -5,6 +5,11 @@
   "description": "",
   "license": "ISC",
   "author": "Naoaki Yamada",
+  "keywords": [
+    "lit", "lit-element", "lit-html", "polymer",
+    "babel", "esbuild", "sucrase", "swc", "tsc",
+    "typescript", "decorator"
+  ],
   "workspaces": [
     "packages/babel-lit-demo",
     "packages/esbuild-lit-demo",
