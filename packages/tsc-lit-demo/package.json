@@ -11,7 +11,7 @@
     "build:tsc": "tsc",
     "clean": "rm -rf src lib",
     "cp": "rm -rf src && cp -rf ../../src/lit-demo src",
-    "serve": "python3 -m http.server 8003"
+    "serve": "python3 -m http.server 8004"
   },
   "dependencies": {
     "lit": "^2.2.0"

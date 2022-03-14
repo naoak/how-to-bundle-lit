@@ -11,7 +11,7 @@
     "build:rollup": "rollup -p node-resolve lib/src/lit-demo-without-decorators.js --file lib/bundle.js",
     "clean": "rm -rf src lib",
     "cp": "rm -rf src && cp -rf ../../src/lit-demo-without-decorators src",
-    "serve": "python3 -m http.server 8000"
+    "serve": "python3 -m http.server 8002"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.3",

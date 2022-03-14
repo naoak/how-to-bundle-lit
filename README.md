@@ -28,6 +28,7 @@ npm run serve -w <demo-name>
 
 - babel-lit-demo
 - esbuild-lit-demo
-- swc-lit-demo (@state is not work)
+- sucrase-lit-demo (decorators are not work)
+- swc-lit-demo (property decorators are not work)
 - tsc-lit-demo
 - tsc-polymer-demo

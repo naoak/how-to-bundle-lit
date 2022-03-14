@@ -11,7 +11,7 @@
     "build:tsc": "tsc",
     "clean": "rm -rf src lib",
     "cp": "rm -rf src && cp -rf ../../src/polymer-demo src",
-    "serve": "python3 -m http.server 9003"
+    "serve": "python3 -m http.server 9004"
   },
   "dependencies": {
     "@polymer/decorators": "^3.0.0",
