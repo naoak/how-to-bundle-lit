@@ -6,9 +6,17 @@
   "license": "ISC",
   "author": "Naoaki Yamada",
   "keywords": [
-    "lit", "lit-element", "lit-html", "polymer",
-    "babel", "esbuild", "sucrase", "swc", "tsc",
-    "typescript", "decorator"
+    "lit",
+    "lit-element",
+    "lit-html",
+    "polymer",
+    "babel",
+    "esbuild",
+    "sucrase",
+    "swc",
+    "tsc",
+    "typescript",
+    "decorator"
   ],
   "workspaces": [
     "packages/babel-lit-demo",
@@ -27,6 +35,6 @@
     "npm": ">=8"
   },
   "volta": {
-    "node": "16.14.0"
+    "node": "16.15.1"
   }
 }
